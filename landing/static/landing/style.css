@@ -1,0 +1,85 @@
+.slogan {
+    font-size: 1.2rem;
+    font-weight: 400;
+    color: #ffffffcc; /* trắng nhẹ, không lấn át tiêu đề */
+    margin-top: 8px;
+    font-style: italic;
+}
+
+/* 🌟 Vùng sản phẩm nổi bật */
+.featured-section {
+    border-radius: 8px;
+}
+
+.featured-card {
+    border: none;
+    box-shadow: 0 6px 12px rgba(13, 110, 253, 0.15);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border-radius: 12px;
+    overflow: hidden;
+}
+
+.featured-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(13, 110, 253, 0.25);
+}
+
+/* 🛒 Vùng sản phẩm theo danh mục */
+.category-section {
+    background-color: #fdfdfd;
+    padding: 50px 0;
+    border-top: 2px solid #e0e0e0;
+}
+
+/* 🧱 Card sản phẩm */
+.card {
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    overflow: hidden;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+}
+
+/* 🖼️ Hình ảnh sản phẩm */
+.card-img-top {
+    aspect-ratio: 5 / 5;
+    object-fit: cover;
+    width: 100%;
+    border-radius: 8px;
+}
+
+/* 📝 Tiêu đề sản phẩm */
+.card-title {
+    font-size: 1rem;
+    font-weight: 600;
+    color: #333;
+    margin-bottom: 0.5rem;
+}
+
+/* 📄 Mã sản phẩm */
+.card-text {
+    font-size: 0.9rem;
+    color: #777;
+}
+
+/* 🏷️ Tiêu đề danh mục */
+.text-primary {
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-bottom: 1.2rem;
+    color: #28a745; /* Màu xanh Bootstrap chuẩn */
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+    padding-bottom: 6px;
+}
+
+
+
+
+
+
