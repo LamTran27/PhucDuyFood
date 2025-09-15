@@ -55,7 +55,7 @@ MIDDLEWARE = [
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
 ]
 
-ROOT_URLCONF = 'phucduyfood.urls'
+ROOT_URLCONF = 'PhucDuyFood.urls'
 
 TEMPLATES = [
     {
@@ -72,7 +72,7 @@ TEMPLATES = [
     },
 ]
 
-WSGI_APPLICATION = 'phucduyfood.wsgi.application'
+WSGI_APPLICATION = 'PhucDuyFood.wsgi.application'
 
 
 # Database
