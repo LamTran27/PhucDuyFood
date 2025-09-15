@@ -15,6 +15,7 @@ import os
 import dj_database_url
 from dotenv import load_dotenv
 
+
 load_dotenv()
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
@@ -135,10 +136,10 @@ EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
 EMAIL_HOST = 'smtp.gmail.com'
 EMAIL_PORT = 587
 EMAIL_USE_TLS = True
-EMAIL_HOST_USER = 'lam.liam.tran@gmail.com'
-EMAIL_HOST_PASSWORD = 'hpty peel lmgp soir'
-DEFAULT_FROM_EMAIL = 'lam.liam.tran@gmail.com'
-ADMIN_EMAILS = ['lam.liam.tran@gmail.com']
+EMAIL_HOST_USER = os.getenv("EMAIL_HOST_USER")
+EMAIL_HOST_PASSWORD = os.getenv("EMAIL_HOST_PASSWORD")
+DEFAULT_FROM_EMAIL = os.getenv("DEFAULT_FROM_EMAIL")
+ADMIN_EMAILS = os.getenv("ADMIN_EMAILS")
 
 
 
