@@ -1,3 +1,9 @@
+.logo-img {
+  height: 70px; /* hoặc 40px nếu bạn muốn nhỏ hơn */
+  width: auto;
+  object-fit: contain;
+}
+
 .slogan {
     font-size: 1.2rem;
     font-weight: 400;

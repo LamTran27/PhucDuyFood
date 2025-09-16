@@ -14,10 +14,25 @@
 <body>
     <!-- Header -->
     <header class="bg-success text-white text-center py-5">
-        <h1 class="mb-0">PhucDuyFood</h1>
+        <div style="background-color: white; display: inline-block; padding: 5px; border-radius: 8px;">
+        <img src="{% static 'landing/images/Logo_Web_PhucDuyFood.PNG' %}" alt="PhucDuyFood Logo" class="logo-img">
+        </div>
         <p class="slogan">🌿 Gia vị rắc - chạm là mê, nếm là nhớ!</p>
-        {% comment %} <img src="#" alt="Sản phẩm nổi bật" class="img-fluid mt-3"> {% endcomment %}
-    </header>
+    </header> 
+
+    {% comment %} <header class="bg-success text-white py-4">
+    <div class="container">
+        <div class="row align-items-center">
+            <div class="col-md-2 text-mid" style="background-color: white; display: inline-block; padding: 8px; border-radius: 8px;">
+                <img src="{% static 'landing/images/Logo_Web_PhucDuyFood.PNG' %}" alt="PhucDuyFood Logo" class="logo-img">
+            </div>
+            <div class="col-md-8 text-start">
+                <p class="slogan mb-0">🌿 Gia vị rắc – chạm là mê, nếm là nhớ!</p>
+            </div>
+            
+        </div>
+    </div>
+    </header> {% endcomment %}
 
    <!-- Vùng Sản phẩm nổi bật -->
     <section class="container my-4 featured-section">
