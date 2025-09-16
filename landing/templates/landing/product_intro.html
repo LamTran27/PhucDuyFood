@@ -100,26 +100,5 @@
     </span>
   {% endfor %}
 </div>
-
-<script>
-  function sprinkleSpices(sizeClass) {
-    const template = document.querySelector('.spice-template');
-    const clone = template.cloneNode(true);
-    clone.classList.remove('spice-template');
-    clone.classList.add('spice-container', sizeClass);
-    clone.style.display = 'block';
-    document.body.appendChild(clone);
-
-    setTimeout(() => {
-      clone.remove();
-    }, 3500);
-  }
-
-  // Rắc 3 lần với kích thước khác nhau
-  sprinkleSpices('size-large');   // Lần 1: To
-  setTimeout(() => sprinkleSpices('size-medium'), 1500); // Lần 2: Vừa
-  setTimeout(() => sprinkleSpices('size-small'), 3000);  // Lần 3: Nhỏ
-</script>
-
-
+<script src="{% static 'landing/main.js' %}"></script>
 </html>
