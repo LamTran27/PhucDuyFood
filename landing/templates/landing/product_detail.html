@@ -1,0 +1,71 @@
+{% extends 'landing/base.html' %}
+{% block title %}PhucDuyFood - Chi tiết sản phẩm{% endblock %}
+{% block content %}
+<!-- Product Detail Section -->
+<section class="container my-5">
+  <div class="row">
+    <!-- Bên trái: hình ảnh -->
+    <div class="col-md-6">
+      <div id="productCarousel" class="carousel slide mb-4" data-bs-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <div class="image-wrapper">
+             <img src="{{ product.image.url }}" class="d-block w-100 img-adaptive rounded" alt="{{ product.name }}">
+            </div>
+          </div>
+          {% for img in product.extra_images.all %}
+          <div class="image-wrapper">
+            <div class="image-frame">
+            <img src="{{ img.url }}" class="d-block w-100 img-adaptive rounded" alt="Ảnh phụ">
+            </div>
+          </div>
+          {% endfor %}
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#productCarousel" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon"></span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#productCarousel" data-bs-slide="next">
+          <span class="carousel-control-next-icon"></span>
+        </button>
+      </div>
+    </div>
+
+    <!-- Bên phải: mô tả, giá, công dụng -->
+    <div class="col-md-6">
+      <h2 class="text-success">{{ product.name }}</h2>
+      <p><strong>Mô tả:</strong> {{ product.description }}</p>
+      <p><strong>Giá:</strong> {{ product.price|floatformat:0 }}₫</p>
+      <p><strong>Hướng dẫn sử dụng:</strong> {{ product.usage }}</p>
+      <a href="/thank-you" class="btn btn-success mt-3">Đặt hàng ngay</a>
+    </div>
+  </div>
+
+  <!-- Thành phần gia vị -->
+ <h4 class="text-success text-center mb-4">Thành phần gia vị</h4>
+<div class="row">
+  <div class="col-md-4">
+    <h5 class="text-muted">Gia vị khô</h5>
+    <ul class="list-unstyled">
+      <li>🧂 Muối biển</li>
+      <li>🌶️ Tiêu đen</li>
+    </ul>
+  </div>
+  <div class="col-md-4">
+    <h5 class="text-muted">Gia vị lỏng</h5>
+    <ul class="list-unstyled">
+      <li>🫒 Dầu olive</li>
+      <li>🍇 Giấm balsamic</li>
+    </ul>
+  </div>
+  <div class="col-md-4">
+    <h5 class="text-muted">Hương liệu đặc biệt</h5>
+    <ul class="list-unstyled">
+      <li>🍄 Nấm truffle</li>
+      <li>🍬 Đường đen</li>
+    </ul>
+  </div>
+</div>
+
+</section>
+
+{% endblock %}

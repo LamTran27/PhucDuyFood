@@ -61,6 +61,11 @@ def footer_signup(request):
 
     return render(request, 'landing/footer.html')
 
+def product_detail(request, id):
+    product = get_object_or_404(Product, id=id)
+    return render(request, 'landing/product_detail.html', {'product': product})
+
+
 def thank_you(request):
     return render(request, 'landing/thank_you.html')
 

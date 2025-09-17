@@ -133,6 +133,69 @@
   }
 }
 
+.carousel-item {
+  height: auto; 
+}
+
+.image-wrapper {
+  aspect-ratio: 16 / 9;
+  width: 100%;
+  background-color: #f8f9fa;
+  border-radius: 12px;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.img-adaptive {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  filter: invert(20%);
+}
+
+.carousel-control-prev-icon:hover,
+.carousel-control-next-icon:hover {
+  filter: invert(70%);
+  transform: scale(1.1);
+  transition: all 0.3s ease;
+}
+
+
+.list-group-item {
+  font-size: 1rem;
+  padding: 0.75rem 1rem;
+}
+
+.product-img {
+  max-height: 500px;
+  object-fit: cover;
+}
+
+.ingredient-card {
+  background-color: #fff;
+  transition: transform 0.2s ease;
+}
+
+.ingredient-card:hover {
+  transform: scale(1.02);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+.ingredient-text {
+  font-family: 'Georgia', serif;
+  font-size: 1.1rem;
+  color: #333;
+}
+
+
+
+
 
 
 
