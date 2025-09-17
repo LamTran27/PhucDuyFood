@@ -1,5 +1,5 @@
 .logo-img {
-  height: 70px; /* hoặc 40px nếu bạn muốn nhỏ hơn */
+  height: 80px; /* hoặc 40px nếu bạn muốn nhỏ hơn */
   width: auto;
   object-fit: contain;
 }
@@ -7,10 +7,15 @@
 .slogan {
     font-size: 1.2rem;
     font-weight: 400;
-    color: #ffffffcc; /* trắng nhẹ, không lấn át tiêu đề */
+    color: #9E1701; /* trắng nhẹ, không lấn át tiêu đề */
     margin-top: 8px;
     font-style: italic;
 }
+
+.white-text {
+  color: white;
+}
+
 
 /* 🌟 Vùng sản phẩm nổi bật */
 .featured-section {
@@ -36,7 +41,6 @@
 
 /* 🛒 Vùng sản phẩm theo danh mục */
 .category-section {
-    background-color: #fdfdfd;
     padding: 30px 0;
 }
 
@@ -93,6 +97,18 @@
   text-transform: uppercase;
   padding-bottom: 6px;
 }
+
+.nav-link {
+  color: white; /* mặc định màu trắng */
+  transition: color 0.3s ease;
+}
+
+.nav-link:hover,
+.nav-link:focus,
+.nav-link.active {
+  color: black; /* khi hover, focus hoặc active thì màu đen */
+}
+
 
 .spice-container {
   position: fixed;

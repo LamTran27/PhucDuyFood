@@ -2,7 +2,7 @@
 {% block title %}PhucDuyFood - Chi tiết sản phẩm{% endblock %}
 {% block content %}
     <section class="container my-4 featured-section">
-        <h2 class="text-center mb-3">Sản phẩm nổi bật</h2>
+        <h2 class="text-center mb-3 white-text">Sản phẩm nổi bật</h2>
         <div class="row">
             {% for product in featured_products|slice:":3" %}
             <div class="col-md-4 mb-4">
@@ -20,7 +20,7 @@
         </div>
     </section>
     <section class="container my-3 category-section">
-        <h3 class="text-center mb-3">Danh mục sản phẩm </h3>
+        <h3 class="text-center mb-3 white-text">Danh mục sản phẩm </h3>
         <ul class="nav nav-tabs justify-content-center mb-4" id="categoryTabs">
         {% for category in categories %}
             <li class="nav-item">
